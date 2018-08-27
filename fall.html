@@ -1,0 +1,76 @@
+<html>
+	<head>
+		<link href="https://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css" rel="stylesheet">
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+		<script src="https://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+		<script>
+			var a="ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+
+			function ran(max){
+             var random=Math.random();
+             var ranvalue=random*max;
+             var intval=Math.floor(ranvalue);
+             return ranvalue;
+			}
+			function getletters(){
+				var getran=ran(a.length);
+				var getletr=a.charAt(getran);
+				return getletr;
+
+			}
+			function positionpick(){
+				var span=$("<span/>");
+				span.css("position","absolute");
+				var rx=ran(100)+"%";
+				span.css("left",rx);
+				span.css("top",0);
+				span.text(getletters());
+				span.appendTo("body");
+				return span;
+
+			}
+			function falllett(){
+				var fallet=positionpick();
+				fallet.css("color","rgb("+ran(255)+","+ran(255)+","+ran(255)+")");
+				fallet.animate({"top":"95%"},5000,function(){
+					fallet.fadeOut();
+					fallet.droppable({
+						drop:function(event,ui){
+							$(this).html(ui.fallet);
+						}
+					})
+                  
+				});
+			}
+
+           
+
+			$(document).on();
+				setInterval(falllett,10);
+		</script>
+		<script>
+			 
+			$(document).ready(function()
+			{
+				$("#buc").draggable();
+				revert:true;
+			})
+		
+		</script>
+		<style>
+			#buc{
+				width: 200;
+				height: 300;
+				border-color: white;
+				border-style: solid;
+				position: absolute;
+			}
+		</style>
+	</head>
+	<body style="background-color: black;">
+		<div id="buc" style="margin-bottom: 100px;">
+			
+		</div>
+	</body>
+</html>

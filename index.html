@@ -1,0 +1,125 @@
+<html>
+	<head>
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script>
+			$(document).ready(function(){
+                 $("#m1").click(function(){
+                   $("#c1").slideToggle(function(){
+                   	$("#c2").slideToggle(function(){
+                   		$("#c3").slideToggle()
+                   	})
+                   })
+                  })
+
+                 $("#m2").click(function(){
+                    $("#c4").slideToggle(function(){
+                   	  $("#c5").slideToggle(function(){
+                   		$("#c6").slideToggle()
+                   	})
+                   })
+                  })
+
+                  $("#m3").click(function(){
+                    $("#c7").slideToggle(function(){
+                   	  $("#c8").slideToggle(function(){
+                   		$("#c9").slideToggle()
+                   	})
+                   })
+                  })
+                 $("#a").mouseenter(function(){
+                 	$(this).css("color","orange")
+                 })
+                 $("#a").mouseleave(function(){
+                 	$(this).css("color","white")
+                 })
+
+                  $("#a1").mouseenter(function(){
+                 	$(this).css("color","orange")
+                 })
+                 $("#a1").mouseleave(function(){
+                 	$(this).css("color","white")
+                 })
+
+
+   			})
+			
+		</script>
+		<style>
+			#hd{
+				width:100%;
+				height:10%;
+				background-color: rgb(99,87,131);
+				font-family: courier;
+				font-size: 26;
+				color:white;
+			}
+			#d{
+				height: 100%;
+				width:15%;
+				background-color: rgb(192,190,213);
+				font-size: 22;
+				font-family: verdana;
+				position: absolute;
+			}
+			#d1{
+				height: 100%;
+				width: 80%;
+				margin-left: 15px;
+				background-color: sliceblue;
+				
+			}
+			#d2{
+				height: 100%;
+				width: 20%;
+				margin-left: 1200px;
+				margin-top: -690px;
+				
+				background-color: white;
+				background-image: url("dnl1.jpg");
+				background-position: right top;
+				background-repeat: no-repeat;
+				
+				background-size: 250px 200px;
+				
+			}
+      #m1,#m2,#m3{
+        color: darkviolet;
+      }
+			p{
+				display: none;
+				font-family: modern;
+				color:rgb(0,0,255);
+			}
+			
+		</style>
+
+	</head->
+    <body>
+    	<div id="hd">
+    		Welcome to MyWebsite
+    		<marquee><a id="a" href="conduct.html" style="color:white;">ContactUs</a>
+    			<a id="a1" href="about.html" style="color:white">AboutUs</a></marquee>
+    		
+    	</div>
+    	<div id="d"> 
+              <center> 
+              	       <div id="m1"><b><u>STUDIES</u></b></div><br>
+              	          <p id="c1"><a href="java.html">Java</a></p>
+              	          <p id="c2"><a href="javascript.html">Java Script</a></p>
+              	          <p id="c3"><a href="python.html">Python</a></p>
+                       <div id="m2"><b><u>ANIMATIONS</u></b></div><br>
+                          <p id="c4"><a href="fall.html">Fall Demo</a></p>
+              	          <p id="c5">Content 2</p>
+              	          <p id="c6">Content 3</p>
+              	       <div id="m3"><b><a style="color: darkviolet" href="link.html">STUDY LINK'S</a></b></div>
+               </center>
+    	</div>
+    	<div id="d1"> 
+         <center> <h1 style="color: green">Welcome MyWebsite</h1>
+                 <h4>Easy to Learning here.</h4>
+         </center>
+      </div>
+    	
+    	<div id="d2"></div>
+    </body>
+</html>

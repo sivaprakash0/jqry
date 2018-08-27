@@ -1,0 +1,157 @@
+<html>
+	<head>
+
+      <link rel="stylesheet" type="text/css" href="mw.css">
+
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script>
+			$(document).ready(function(){
+                 $("#m1").click(function(){
+                   $("#c1").slideToggle(function(){
+                   	$("#c2").slideToggle(function(){
+                   		$("#c3").slideToggle()
+                   	})
+                   })
+                  })
+
+                 $("#m2").click(function(){
+                    $("#c4").slideToggle(function(){
+                   	  $("#c5").slideToggle(function(){
+                   		$("#c6").slideToggle()
+                   	})
+                   })
+                  })
+
+                  $("#m3").click(function(){
+                    $("#c7").slideToggle(function(){
+                   	  $("#c8").slideToggle(function(){
+                   		$("#c9").slideToggle()
+                   	})
+                   })
+                  })
+                 $("#a").mouseenter(function(){
+                 	$(this).css("color","orange")
+                 })
+                 $("#a").mouseleave(function(){
+                 	$(this).css("color","white")
+                 })
+
+                  $("#a1").mouseenter(function(){
+                 	$(this).css("color","orange")
+                 })
+                 $("#a1").mouseleave(function(){
+                 	$(this).css("color","white")
+                 })
+                   $("#a2").mouseenter(function(){
+                  $(this).css("color","orange")
+                 })
+                 $("#a2").mouseleave(function(){
+                  $(this).css("color","white")
+                 })
+
+   			})
+			
+		</script>
+         <style>
+      #hd{
+        width:100%;
+        height:10%;
+        background-color: rgb(99,87,131);
+        font-family: courier;
+        font-size: 26;
+        color:white;
+      }
+      #d{
+        height: 100%;
+        width:15%;
+        background-color: rgb(192,190,213);
+        font-size: 22;
+        font-family: verdana;
+        position: absolute;
+      }
+      #d1{
+        height: 100%;
+        width: 80%;
+        margin-left: 16%;
+        background-color: sliceblue;
+        
+      }
+      #d2{
+        height: 100%;
+        width: 20%;
+        margin-left: 1200px;
+        margin-top: -690px;
+        
+        background-color: white;
+        background-image: url("py.PNG");
+        background-position: right top;
+        background-repeat: no-repeat;
+        
+        background-size: 270px 250px;
+        
+      }
+      #m1,#m2,#m3{
+        color: darkviolet;
+      }
+      #c1,#c2,#c3,#c4,#c5,#c6,#c7,#c8,#c9{
+        display: none;
+        font-family: modern;
+        color:rgb(0,0,255);
+      }
+      
+    </style>
+ 
+	</head>
+    <body>
+    	<div id="hd">
+    		Welcome to MyWebsite
+    		<marquee><a id="a" href="conduct.html" style="color:white;">ContactUs</a>
+    			<a id="a1" href="about.html" style="color:white">AboutUs</a>
+        <a id="a2" href="index.html" style="color:white">Home</a></marquee>
+    		
+    	</div>
+    	<div id="d"> 
+              <center> 
+              	      <div id="m1"><b><u>STUDIES</u></b></div><br>
+                          <p id="c1"><a href="java.html">Java</a></p>
+                          <p id="c2"><a href="javascript.html">Java Script</a></p>
+                          <p id="c3"><a href="python.html">Python</a></p>
+                       <div id="m2"><b><u>ANIMATIONS</u></b></div><br>
+                          <p id="c4"><a href="fall.html">Fall Demo</a></p>
+              	          <h5 id="c5">Content 2</h5>
+              	          <h5 id="c6">Content 3</h5>
+              	       <div id="m3"><b><a style="color: darkviolet" href="link.html">STUDY LINK'S</a></b></div>
+               </center>
+    	</div>
+    	<div id="d1"> 
+            <h2 style="color: orange;">Python</h2>
+               <h5>Python is an advanced programming language that is interpreted, object-oriented and built on flexible and robust semantics.</h5>
+            <h4 style="color: midnightblue;">WHO USES IT?</h4>
+                <ul >
+                     <li><h5><u>Professions and Industries:</u></h5></li>
+                        <ul>
+                            <li>Python developers, software engineers, back end developers, Python programmers</li>
+                            <li>Used by employers in information technology, engineering, professional services and design</li>
+                        </ul>
+                     <li><h5><u>Major Organizations:</u></h5> Google, Pinterest, Instagram, YouTube, DropBox, NASA, ESRI</li>
+                     <li><h5><u>Specializations and Industries:</u></h5> Web and Internet development (frameworks, micro-frameworks and advanced content management systems); scientific and numeric computing; desktop graphical user interfaces (GUIs)</li>
+               </ul>
+           <h4 style="color: midnightblue;">WHAT MAKES LEARNING IT IMPORTANT?</h4>
+              <h5>Python lets you work quickly to integrate systems as a scripting or glue language. It’s also suited for Rapid Application Develop (RAD).</h5>
+             <ul>
+                 <li>The game Civilization 4 has all its inner logic, including AI, implemented in Python.</li>
+    <li>NASA uses Python in its Integrated Planning System as a standard scripting language.</li>
+    <li><u>Features:</u></li>
+       <ul>
+          <li>Simple to learn and easily read</li>
+          <li>Associated web frameworks for developing web-based applications</li>
+          <li>Free interpreter and standard library available in source or binary on major platforms</li>
+       </ul>
+  </ul>
+  <h4 style="color: midnightblue;">WHERE DID IT START?</h4>
+  <h5>Python was developed in the late 1980s at CWI in the Netherlands and first released to the public in 1991.</h5>
+      </div>
+    	
+    	<div id="d2"></div>
+    </body>
+</html>
